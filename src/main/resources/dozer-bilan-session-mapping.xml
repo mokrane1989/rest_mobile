@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozermapper.github.io/schema/bean-mapping"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping http://dozermapper.github.io/schema/bean-mapping.xsd">
+
+<mapping  map-null="false">
+		<class-a>dz.mesrs.progres.rest.dto.examen.BilanSessionDto
+		</class-a>
+		<class-b>dz.mesrs.progres.rest.modal.examen.BilanSession
+		</class-b>
+
+
+
+
+<!--		<field-exclude>
+			<a>bilanUes</a>
+			<b>bilanUes</b>
+		</field-exclude>-->
+
+		<field>
+			<a>periodeId</a>
+			<b>periode.id</b>
+		</field>
+
+		<field>
+			<a>periodeLibelleFr</a>
+			<b>periode.libelleLongLt</b>
+		</field>
+
+		<field>
+			<a>periodeLibelleAr</a>
+			<b>periode.libelleLongAr</b>
+		</field>
+
+		<field>
+			<a>niveauCode</a>
+			<b>periode.niveau.code</b>
+		</field>
+
+		<field>
+			<a>niveauLibelleLongLt</a>
+			<b>periode.niveau.libelleLongLt</b>
+		</field>
+
+		<field>
+			<a>niveauRang</a>
+			<b>periode.niveau.rang</b>
+		</field>
+		<field>
+			<a>cycleLibelleLongLt</a>
+			<b>periode.niveau.cycle.libelleLongLt</b>
+		</field>
+
+		<field-exclude>
+			<a>oofId</a>
+			<b>oof.id</b>
+		</field-exclude>
+
+	<field>
+		<a>typeDecisionLibelleFr</a>
+		<b>typeDecision.libelleLongFr</b>
+	</field>
+
+
+	</mapping>
+
+
+
+
+
+
+
+
+	<mapping map-null="false">
+		<class-a>dz.mesrs.progres.rest.dto.examen.BilanUeDto
+		</class-a>
+		<class-b>dz.mesrs.progres.rest.modal.examen.BilanUe
+		</class-b>
+		<field>
+			<a>bilanMcs</a>
+			<b>bilanMcs</b>
+		</field>
+		<field>
+			<a>bilanSessionId</a>
+			<b>bilanSession.id</b>
+		</field>
+		<field>
+			<a>repartitionUeId</a>
+			<b>repartitionUe.id</b>
+		</field>
+		<field>
+			<a>ueLibelleFr</a>
+			<b>repartitionUe.uniteEnseignement.libelleFr</b>
+		</field>
+		<field>
+			<a>ueCode</a>
+			<b>repartitionUe.uniteEnseignement.code</b>
+		</field>
+		<field>
+			<a>ueType</a>
+			<b>repartitionUe.uniteEnseignement.ncNatureUe.code</b>
+		</field>
+		<field>
+			<a>ueNatureLlFr</a>
+			<b>repartitionUe.uniteEnseignement.ncNatureUe.libelleLongFr</b>
+		</field>
+		<field>
+			<a>ueNatureLlAr</a>
+			<b>repartitionUe.uniteEnseignement.ncNatureUe.libelleLongAr</b>
+		</field>
+		<field>
+			<a>ueNatureLcFr</a>
+			<b>repartitionUe.uniteEnseignement.ncNatureUe.libelleCourtFr</b>
+		</field>
+		<field>
+			<a>ueNatureLcAr</a>
+			<b>repartitionUe.uniteEnseignement.ncNatureUe.libelleCourtAr</b>
+		</field>
+		<field>
+			<a>ueNatureCode</a>
+			<b>repartitionUe.uniteEnseignement.ncNatureUe.code</b>
+		</field>
+		<field>
+			<a>ueNoteObtention</a>
+			<b>repartitionUe.noteObtension</b>
+		</field>
+
+	</mapping>
+	<mapping map-null="false">
+		<class-a>dz.mesrs.progres.rest.dto.examen.BilanMcDto
+		</class-a>
+		<class-b>dz.mesrs.progres.rest.modal.examen.BilanMc
+		</class-b>
+
+		<field>
+			<a>bilanUeId</a>
+			<b>bilanUe.id</b>
+		</field>
+		<field>
+			<a>bilanSessionId</a>
+			<b>bilanUe.bilanSession.id</b>
+		</field>
+
+		<field>
+			<a>rattachementMcId</a>
+			<b>rattachementMc.id</b>
+		</field>
+		<field>
+			<a>mcCode</a>
+			<b>rattachementMc.matiereConstitutive.code</b>
+		</field>
+		<field>
+			<a>mcLibelleFr</a>
+			<b>rattachementMc.matiereConstitutive.libelleFr</b>
+		</field>
+
+
+
+	</mapping>
+
+</mappings>

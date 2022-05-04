@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozermapper.github.io/schema/bean-mapping"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping http://dozermapper.github.io/schema/bean-mapping.xsd">
+
+
+<mapping map-null="false">
+		<class-a> dz.mesrs.progres.rest.dto.examen.CoefficientExamenDto
+		</class-a>
+		<class-b>dz.mesrs.progres.rest.modal.examen.CoefficientExamen
+		</class-b>
+
+		<field>
+			<a>oofId</a>
+			<b>ouvertureOffreFormation.id</b>
+		</field>
+		<field>
+			<a>ofLibelleFr</a>
+			<b>ouvertureOffreFormation.offreFormation.libelleLongFr</b>
+		</field>
+
+		<field>
+			<a>periodeId</a>
+			<b>periode.id</b>
+		</field>
+		<field>
+			<a>periodeLibelleFr</a>
+			<b>periode.libelleLongLt</b>
+		</field>
+		<field>
+			<a>niveauLibelleFr</a>
+			<b>periode.niveau.libelleLongLt</b>
+		</field>
+
+		<field>
+			<a>rattachementMcId</a>
+			<b>rattachementMc.id</b>
+		</field>
+
+		<field>
+			<a>mcLibelleFr</a>
+			<b>rattachementMc.matiereConstitutive.libelleFr</b>
+		</field>
+
+
+		<field>
+			<a>mcCredit</a>
+			<b>rattachementMc.credit</b>
+		</field>
+<!-- 		<field> -->
+<!-- 			<a>anneeAcademiquePremiereAnnee</a> -->
+<!-- 			<b>rattachementMc.ouvertureOffreFormation.anneeAcademique.premiereAnnee</b> -->
+<!-- 		</field> -->
+<!-- 		<field> -->
+<!-- 			<a>anneeAcademiqueDeuxiemeAnnee</a> -->
+<!-- 			<b>rattachementMc.ouvertureOffreFormation.anneeAcademique.deuxiemeAnnee</b> -->
+<!-- 		</field> -->
+	</mapping>
+
+</mappings>

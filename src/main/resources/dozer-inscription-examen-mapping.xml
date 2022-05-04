@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozermapper.github.io/schema/bean-mapping"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping http://dozermapper.github.io/schema/bean-mapping.xsd">
+
+    <mapping map-null="false">
+        <class-a>dz.mesrs.progres.rest.dto.examen.InscriptionExamenDto
+        </class-a>
+        <class-b>dz.mesrs.progres.rest.modal.examen.InscriptionExamen
+        </class-b>
+
+
+
+
+
+        <field>
+            <a>rattachementMcId</a>
+            <b>examenSession.rattachementMc.id</b>
+        </field>
+        <field>
+            <a>rattachementMcCoefficient</a>
+            <b>examenSession.rattachementMc.coefficient</b>
+        </field>
+        <field>
+            <a>rattachementMcCredit</a>
+            <b>examenSession.rattachementMc.credit</b>
+        </field>
+
+
+
+
+        <field>
+            <a>ueCode</a>
+            <b>examenSession.rattachementMc.uniteEnseignement.code
+            </b>
+        </field>
+        <field>
+            <a>ueNatureLlFr</a>
+            <b>examenSession.rattachementMc.uniteEnseignement.ncNatureUe.libelleLongFr
+            </b>
+        </field>
+
+
+
+
+
+
+        <field>
+            <a>mcLibelleFr</a>
+            <b>examenSession.rattachementMc.matiereConstitutive.libelleFr
+            </b>
+        </field>
+
+        <field>
+            <a>planningSessionId</a>
+            <b>examenSession.planningSession.id
+            </b>
+        </field>
+
+        <field>
+            <a>planningSessionIntitule</a>
+            <b>examenSession.planningSession.ncTypeSession.code
+            </b>
+        </field>
+
+
+
+
+
+        <field>
+            <a>idPeriode</a>
+            <b>examenSession.planningSession.periode.id</b>
+        </field>
+
+
+
+
+    </mapping>
+
+
+
+
+
+</mappings>

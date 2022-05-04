@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozermapper.github.io/schema/bean-mapping"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping http://dozermapper.github.io/schema/bean-mapping.xsd">
+
+
+<mapping  map-null="false">
+        <class-a>dz.mesrs.progres.rest.dto.bac.DossierBachelierDto
+        </class-a>
+        <class-b>dz.mesrs.progres.rest.modal.cursus.DossierBachelier
+        </class-b>
+
+    </mapping>
+
+
+    <mapping map-null="false">
+        <class-a>dz.mesrs.progres.rest.dto.bac.NoteMatiereBacDto
+        </class-a>
+        <class-b>dz.mesrs.progres.rest.modal.cursus.NoteMatiereBac
+        </class-b>
+
+
+        <field>
+            <a>refCodeMatiereLibelleFr</a>
+            <b>refCodeMatiere</b>
+        </field>
+        <field>
+            <a>anneeBac</a>
+            <b>anneeBac</b>
+        </field>
+        <field>
+            <a>note</a>
+            <b>note</b>
+        </field>
+
+    </mapping>
+
+
+
+
+
+</mappings>

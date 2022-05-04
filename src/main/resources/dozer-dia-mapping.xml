@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozermapper.github.io/schema/bean-mapping"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping http://dozermapper.github.io/schema/bean-mapping.xsd">
+
+
+    <mapping map-id="dossierBachelierOnly" map-null="false" type="bi-directional">
+        <class-a>dz.mesrs.progres.rest.modal.cursus.DossierInscriptionAdministrative</class-a>
+        <class-b>dz.mesrs.progres.rest.dto.cursus.DossierEtudiantDto</class-b>
+        <field>
+
+            <a>dossierEtudiant.id</a>
+            <b>id</b>
+        </field>
+        <field>
+
+            <a>dossierEtudiant.numeroMatricule</a>
+            <b>numeroMatricule</b>
+        </field>
+    </mapping>
+
+
+
+    <mapping map-null="false" >
+
+        <class-a>dz.mesrs.progres.rest.modal.cursus.DossierInscriptionAdministrative</class-a>
+        <class-b>dz.mesrs.progres.rest.dto.cursus.DossierInscriptionAdministrativeDto</class-b>
+        <field>
+
+            <a>id</a>
+            <b>id</b>
+        </field>
+        <field>
+
+            <a>ouvertureOffreFormation.anneeAcademique.id</a>
+            <b>anneeAcademiqueId</b>
+        </field>
+
+        <field>
+
+            <a>ouvertureOffreFormation.anneeAcademique.code</a>
+            <b>anneeAcademiqueCode</b>
+        </field>
+        <field>
+
+            <a>ouvertureOffreFormation.id</a>
+            <b>ouvertureOffreFormationId</b>
+        </field>
+        <field>
+
+            <a>dossierEtudiant.id</a>
+            <b>dossierEtudiantId</b>
+        </field>
+
+        <field>
+
+            <a>dossierEtudiant.numeroMatricule</a>
+            <b>numeroMatricule</b>
+        </field>
+
+        <field>
+
+            <a>dossierEtudiant.individu.photo</a>
+            <b>photo</b>
+        </field>
+
+        <field>
+
+            <a>dossierEtudiant.individu.identifiant</a>
+            <b>nin</b>
+        </field>
+
+        <field>
+
+            <a>dossierEtudiant.individu.id</a>
+            <b>individuId</b>
+        </field>
+
+        <field>
+
+            <a>dossierEtudiant.individu.nomArabe</a>
+            <b>individuNomArabe</b>
+        </field>
+        <field>
+
+            <a>dossierEtudiant.individu.nomLatin</a>
+            <b>individuNomLatin</b>
+        </field>
+
+        <field>
+
+            <a>dossierEtudiant.individu.prenomArabe</a>
+            <b>individuPrenomArabe</b>
+        </field>
+        <field>
+
+            <a>dossierEtudiant.individu.prenomLatin</a>
+            <b>individuPrenomLatin</b>
+        </field>
+
+        <field>
+
+            <a>dossierEtudiant.individu.dateNaissance</a>
+            <b>individuDateNaissance</b>
+        </field>
+
+        <field>
+
+            <a>dossierEtudiant.individu.lieuNaissance</a>
+            <b>individuLieuNaissance</b>
+        </field>
+
+        <field>
+
+            <a>dossierEtudiant.individu.lieuNaissanceArabe</a>
+            <b>individuLieuNaissanceArabe</b>
+        </field>
+
+
+        <field>
+
+            <a>dossierEtudiant.id</a>
+            <b>dossierEtudiantId</b>
+        </field>
+
+        <field>
+
+            <a>dossierEtudiant.numeroMatricule</a>
+            <b>numeroMatricule</b>
+        </field>
+
+        <field>
+
+            <a>niveau.id</a>
+            <b>niveauId</b>
+        </field>
+        <field>
+
+            <a>niveau.code</a>
+            <b>niveauCode</b>
+        </field>
+        <field>
+
+            <a>niveau.rang</a>
+            <b>niveauRang</b>
+        </field>
+
+        <field>
+
+            <a>niveau.libelleLongLt</a>
+            <b>niveauLibelleLongLt</b>
+        </field>
+        <field>
+
+            <a>niveau.libelleLongAr</a>
+            <b>niveauLibelleLongAr</b>
+        </field>
+        <field>
+
+            <a>niveau.cycle.id</a>
+            <b>cycleId</b>
+        </field>
+        <field>
+
+            <a>niveau.cycle.code</a>
+            <b>cycleCode</b>
+        </field>
+        <field>
+
+            <a>niveau.cycle.libelleLongLt</a>
+            <b>refLibelleCycle</b>
+        </field>
+        <field>
+
+            <a>niveau.cycle.libelleLongLt</a>
+            <b>cycleLibelleLongLt</b>
+        </field>
+
+        <field>
+
+            <a>niveau.cycle.libelleLongAr</a>
+            <b>refLibelleCycleAr</b>
+        </field>
+        <field>
+
+            <a>niveau.cycle.code</a>
+            <b>refCodeCycle</b>
+        </field>
+
+        <field>
+
+            <a>ouvertureOffreFormation.offreFormation.domaineLMD.id</a>
+            <b>ofIdDomaine</b>
+        </field>
+        <field>
+
+            <a>ouvertureOffreFormation.offreFormation.domaineLMD.identifiant</a>
+            <b>ofCodeDomaine</b>
+        </field>
+
+        <field>
+
+            <a>ouvertureOffreFormation.offreFormation.domaineLMD.llDomaine</a>
+            <b>ofLlDomaine</b>
+        </field>
+        <field>
+
+            <a>ouvertureOffreFormation.offreFormation.domaineLMD.llDomaineArabe
+            </a>
+            <b>ofLlDomaineArabe</b>
+        </field>
+
+        <field>
+            <a>ouvertureOffreFormation.offreFormation.filiereLmd.id</a>
+            <b>ofIdFiliere</b>
+
+        </field>
+        <field>
+            <a>ouvertureOffreFormation.offreFormation.filiereLmd.identifiant</a>
+            <b>ofCodeFiliere</b>
+
+        </field>
+        <field>
+            <a>ouvertureOffreFormation.offreFormation.filiereLmd.llFiliereArabe
+            </a>
+            <b>ofLlFiliereArabe</b>
+
+        </field>
+        <field>
+            <a>ouvertureOffreFormation.offreFormation.filiereLmd.llFiliere</a>
+            <b>ofLlFiliere</b>
+
+        </field>
+        <field>
+            <a>ouvertureOffreFormation.offreFormation.specialiteLmd.id</a>
+            <b>ofIdSpecialite</b>
+
+        </field>
+        <field>
+            <a>ouvertureOffreFormation.offreFormation.specialiteLmd.identifiant
+            </a>
+            <b>ofCodeSpecialite</b>
+
+        </field>
+        <field>
+            <a>ouvertureOffreFormation.offreFormation.specialiteLmd.llSpecialiteArabe
+            </a>
+            <b>ofLlSpecialiteArabe</b>
+
+        </field>
+        <field>
+            <a>ouvertureOffreFormation.offreFormation.specialiteLmd.llSpecialite
+            </a>
+            <b>ofLlSpecialite</b>
+
+        </field>
+
+
+        <field>
+            <a>ouvertureOffreFormation.refEtablissement.identifiant</a>
+            <b>refCodeEtablissement</b>
+
+        </field>
+
+        <field>
+            <a>ouvertureOffreFormation.refEtablissement.llEtablissementArabe</a>
+            <b>llEtablissementArabe</b>
+
+        </field>
+
+        <field>
+            <a>ouvertureOffreFormation.refEtablissement.llEtablissementLatin</a>
+            <b>llEtablissementLatin</b>
+
+        </field>
+
+
+    </mapping>
+</mappings>

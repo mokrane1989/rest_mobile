@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozermapper.github.io/schema/bean-mapping"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping http://dozermapper.github.io/schema/bean-mapping.xsd">
+
+
+<mapping map-null="false">
+		<class-a>dz.mesrs.progres.rest.dto.examen.PlanningSessionDto
+		</class-a>
+		<class-b>dz.mesrs.progres.rest.modal.examen.PlanningSession
+		</class-b>
+
+		<field>
+			<a>ouvertureOffreFormationId</a>
+			<b>ouvertureOffreFormation.id</b>
+		</field>
+		<field>
+			<a>offreFormationId</a>
+			<b>ouvertureOffreFormation.offreFormation.id</b>
+		</field>
+		<field>
+			<a>offreFormationCode</a>
+			<b>ouvertureOffreFormation.offreFormation.code</b>
+		</field>
+		<field>
+			<a>offreFormationLibelleFr</a>
+			<b>ouvertureOffreFormation.offreFormation.libelleLongFr</b>
+		</field>
+		<field>
+			<a>refCodeEtablissement</a>
+			<b>ouvertureOffreFormation.refEtablissement.identifiant</b>
+		</field>
+
+		<!-- private Niveau niveau -->
+		<field>
+			<a>niveauId</a>
+			<b>niveau.id</b>
+		</field>
+		<field>
+			<a>niveauCode</a>
+			<b>niveau.code</b>
+		</field>
+		<field>
+			<a>niveauLibelleLongLt</a>
+			<b>niveau.libelleLongLt</b>
+		</field>
+		<field>
+			<a>cycleId</a>
+			<b>niveau.cycle.id</b>
+		</field>
+		<field>
+			<a>cycleCode</a>
+			<b>niveau.cycle.code</b>
+		</field>
+		<field>
+			<a>cycleLibelleLongLt</a>
+			<b>niveau.cycle.libelleLongLt</b>
+		</field>
+
+		<!-- AnneeAcademique anneeAcademique -->
+		<field>
+			<a>anneeAcademiqueId</a>
+			<b>anneeAcademique.id</b>
+		</field>
+		<field>
+			<a>anneeAcademiqueCode</a>
+			<b>anneeAcademique.code</b>
+		</field>
+		<!-- private SituationEntite situationEntite -->
+
+		<!-- private Periode periode -->
+		<field>
+			<a>idPeriode</a>
+			<b>periode.id</b>
+		</field>
+		<field>
+			<a>codePeriode</a>
+			<b>periode.code</b>
+		</field>
+		<field>
+			<a>libellePeriode</a>
+			<b>periode.libelleLongLt</b>
+		</field>
+
+		<field>
+			<a>ncTypeSessionId</a>
+			<b>ncTypeSession.id</b>
+		</field>
+		<field>
+			<a>ncTypeSessionCode</a>
+			<b>ncTypeSession.code</b>
+		</field>
+		<field>
+			<a>ncTypeSessionLibelleFr</a>
+			<b>ncTypeSession.libelleLongFr</b>
+		</field>
+
+
+
+		<!-- situation -->
+
+		<field>
+			<a>ncTypeSessionLibelleFr</a>
+			<b>ncTypeSession.libelleLongFr</b>
+		</field>
+	</mapping>
+
+	<mapping map-null="false">
+	<class-a>dz.mesrs.progres.rest.dto.examen.ExamenSessionDto
+	</class-a>
+	<class-b>dz.mesrs.progres.rest.modal.examen.ExamenSession
+	</class-b>
+
+
+<field>
+	<a>mcLibelleFr</a>
+	<b>rattachementMc.matiereConstitutive.libelleFr</b>
+</field>
+
+		<field>
+			<a>libellePeriode</a>
+			<b>planningSession.periode.libelleLongLt</b>
+		</field>
+
+		<field>
+			<a>typeSession</a>
+			<b>planningSession.ncTypeSession.libelleLongFr</b>
+		</field>
+		<field>
+			<a date-format="dd-MM-yyyy">dateExamen</a>
+			<b>dateExamen</b>
+		</field>
+
+
+
+
+
+
+</mapping>
+
+
+
+
+
+
+
+</mappings>

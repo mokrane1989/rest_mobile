@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozermapper.github.io/schema/bean-mapping"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping http://dozermapper.github.io/schema/bean-mapping.xsd">
+
+<mapping>
+      		<class-a>dz.mesrs.progres.rest.dto.lmd.PeriodeDto</class-a>
+      		<class-b>dz.mesrs.progres.rest.modal.lmd.Periode</class-b>
+
+				<field>
+					<a>idNiveau</a>
+					<b>niveau.id</b>
+				</field>
+				<field>
+					<a>rangNiveau</a>
+					<b>niveau.rang</b>
+				</field>
+
+				<field>
+					<a>libelleLongFrNiveau</a>
+					<b>niveau.libelleLongLt</b>
+				</field>
+
+				<field>
+					<a>libelleLongFrCycle</a>
+					<b>niveau.cycle.libelleLongLt</b>
+				</field>
+
+			</mapping>
+</mappings>

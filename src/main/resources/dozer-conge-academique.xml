@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozermapper.github.io/schema/bean-mapping"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping http://dozermapper.github.io/schema/bean-mapping.xsd">
+
+<mapping map-null="false">
+		<class-a>dz.mesrs.progres.rest.dto.conge.CongeAcademiqueDto
+		</class-a>
+		<class-b>dz.mesrs.progres.rest.modal.conge.CongeAcademique
+		</class-b>
+
+		<field>
+			<a>ncTypeCongeId</a>
+			<b>typeConge.id</b>
+		</field>
+		<field>
+			<a>ncTypeCongeLibelleLongFr</a>
+			<b>typeConge.libelleLongFr</b>
+		</field>
+
+		<field>
+			<a>ncMotifRefusId</a>
+			<b>motifRefus.id</b>
+		</field>
+		<field>
+			<a>ncMotifRefusLibelleLongFr</a>
+			<b>motifRefus.libelleLongFr</b>
+		</field>
+
+		<field>
+			<a>ncMotifRefusReintegrationId</a>
+			<b>motifRefusReintegration.id</b>
+		</field>
+		<field>
+			<a>ncMotifRefusReintegrationLibelleLongFr</a>
+			<b>motifRefusReintegration.libelleLongFr</b>
+		</field>
+		
+		<field>
+			<a>dossierInscriptionId</a>
+			<b>dossierInscriptionAdministrative.id</b>
+		</field>
+		<field>
+			<a>idEtablissement</a>
+			<b>dossierInscriptionAdministrative.refEtablissement.id</b>
+		</field>
+
+		<field>
+			<a>niveauId</a>
+			<b>dossierInscriptionAdministrative.niveau.id</b>
+		</field>
+		<field>
+			<a>niveauCode</a>
+			<b>dossierInscriptionAdministrative.niveau.code</b>
+		</field>
+		<field>
+			<a>niveauRang</a>
+			<b>dossierInscriptionAdministrative.niveau.rang</b>
+		</field>
+
+		<field>
+			<a>niveaulibelleLongLt</a>
+			<b>dossierInscriptionAdministrative.niveau.libelleLongLt</b>
+		</field>
+		<field>
+			<a>niveaulibelleLongAr</a>
+			<b>dossierInscriptionAdministrative.niveau.libelleLongAr</b>
+		</field>
+		<field>
+			<a>cycleId</a>
+			<b>dossierInscriptionAdministrative.niveau.cycle.id</b>
+		</field>
+		<field>
+			<a>cycleCode</a>
+			<b>dossierInscriptionAdministrative.niveau.cycle.code</b>
+		</field>
+		<field>
+			<a>cyclelibelleLongLt</a>
+			<b>dossierInscriptionAdministrative.niveau.cycle.libelleLongLt</b>
+		</field>
+		
+		<field>
+			<a>anneeAcademiqueId</a>
+			<b>anneeAcademique.id</b>
+		</field>
+
+		<field>
+			<a>anneeAcademiqueCode</a>
+			<b>anneeAcademique.code</b>
+		</field>
+		
+		<field>
+			<a>anneeAcademiquePremiereAnnee</a>
+			<b>anneeAcademique.premiereAnnee</b>
+		</field>
+
+		<field>
+			<a>anneeAcademiqueDeuxiemeAnnee</a>
+			<b>anneeAcademique.deuxiemeAnnee</b>
+		</field>
+
+		<field>
+			<a>anneeAcademiqueReintegrationId</a>
+			<b>anneeAcademiqueReintegration.id</b>
+		</field>
+
+		<field>
+			<a>anneeAcademiqueReintegrationCode</a>
+			<b>anneeAcademiqueReintegration.code</b>
+		</field>
+		
+		<field>
+			<a>anneeAcademiqueReintegrationPremiereAnnee</a>
+			<b>anneeAcademiqueReintegration.premiereAnnee</b>
+		</field>
+
+		<field>
+			<a>anneeAcademiqueReintegrationDeuxiemeAnnee</a>
+			<b>anneeAcademiqueReintegration.deuxiemeAnnee</b>
+		</field>
+
+<!--
+		<field>
+			<a>situationId</a>
+			<b>situation.id</b>
+		</field>
+
+		<field>
+			<a>libelleSituation</a>
+			<b>situation.libelleFr</b>
+		</field>
+-->
+
+		<field>
+			<a>dossierEtudiantMatricule</a>
+			<b>dossierInscriptionAdministrative.dossierEtudiant.numeroMatricule
+			</b>
+		</field>
+		<field>
+			<a>etudiantNomLatin</a>
+			<b>dossierInscriptionAdministrative.dossierEtudiant.individu.nomLatin
+			</b>
+
+		</field>
+		<field>
+			<a>etudiantPrenomLatin</a>
+			<b>dossierInscriptionAdministrative.dossierEtudiant.individu.prenomLatin
+			</b>
+
+		</field>
+		<field>
+			<a> etudiantNomArabe</a>
+			<b>dossierInscriptionAdministrative.dossierEtudiant.individu.nomArabe
+			</b>
+		</field>
+		<field>
+			<a>etudiantPrenomArabe</a>
+			<b>dossierInscriptionAdministrative.dossierEtudiant.individu.prenomArabe
+			</b>
+		</field>
+		
+		<field>
+			<a>etudiantDateNaissance</a>
+			<b>dossierInscriptionAdministrative.dossierEtudiant.individu.dateNaissance
+			</b>
+		</field>
+
+		<field>
+			<a>ouvertureOffreFormationId</a>
+			<b>dossierInscriptionAdministrative.ouvertureOffreFormation.id</b>
+		</field>
+		
+		<field>
+			<a>libelleOffreFormationFr</a>
+			<b>dossierInscriptionAdministrative.ouvertureOffreFormation.offreFormation.libelleLongFr</b>
+		</field>
+
+		<field>
+			<a>libelleOffreFormationAr</a>
+			<b>dossierInscriptionAdministrative.ouvertureOffreFormation.offreFormation.libelleLongAr</b>
+		</field>
+
+	</mapping>
+
+</mappings>
