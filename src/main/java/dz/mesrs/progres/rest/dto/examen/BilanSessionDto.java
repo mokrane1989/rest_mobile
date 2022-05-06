@@ -84,7 +84,8 @@ public class BilanSessionDto implements Serializable {
 	private String niveauCode;
 	private int niveauRang;
 	private String niveauLibelleLongLt;
-	
+	private String niveauLibelleLongAr;
+
 
 	private Boolean creditMinObtenu;
 	private Boolean oldSession;

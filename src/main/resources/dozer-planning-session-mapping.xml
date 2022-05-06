@@ -44,6 +44,10 @@
 			<a>niveauLibelleLongLt</a>
 			<b>niveau.libelleLongLt</b>
 		</field>
+	<field>
+			<a>ncTypeSessionLibelleAr</a>
+			<b>niveau.libelleLongAr</b>
+		</field>
 		<field>
 			<a>cycleId</a>
 			<b>niveau.cycle.id</b>
@@ -80,6 +84,9 @@
 		<field>
 			<a>libellePeriode</a>
 			<b>periode.libelleLongLt</b>
+		</field><field>
+			<a>libellePeriodeAr</a>
+			<b>periode.libelleLongAr</b>
 		</field>
 
 		<field>
@@ -93,16 +100,15 @@
 		<field>
 			<a>ncTypeSessionLibelleFr</a>
 			<b>ncTypeSession.libelleLongFr</b>
+		</field><field>
+			<a>ncTypeSessionLibelleAr</a>
+			<b>ncTypeSession.libelleLongAr</b>
 		</field>
 
 
 
 		<!-- situation -->
 
-		<field>
-			<a>ncTypeSessionLibelleFr</a>
-			<b>ncTypeSession.libelleLongFr</b>
-		</field>
 	</mapping>
 
 	<mapping map-null="false">
@@ -116,10 +122,18 @@
 	<a>mcLibelleFr</a>
 	<b>rattachementMc.matiereConstitutive.libelleFr</b>
 </field>
+		<field>
+			<a>mcLibelleAr</a>
+			<b>rattachementMc.matiereConstitutive.libelleAr</b>
+		</field>
 
 		<field>
 			<a>libellePeriode</a>
 			<b>planningSession.periode.libelleLongLt</b>
+		</field>
+		<field>
+			<a>libellePeriodeAr</a>
+			<b>planningSession.periode.libelleLongAr</b>
 		</field>
 
 		<field>
@@ -127,14 +141,13 @@
 			<b>planningSession.ncTypeSession.libelleLongFr</b>
 		</field>
 		<field>
+			<a>typeSessionAr</a>
+			<b>planningSession.ncTypeSession.libelleLongAr</b>
+		</field>
+		<field>
 			<a date-format="dd-MM-yyyy">dateExamen</a>
 			<b>dateExamen</b>
 		</field>
-
-
-
-
-
 
 </mapping>
 

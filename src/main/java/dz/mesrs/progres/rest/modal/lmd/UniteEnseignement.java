@@ -17,6 +17,8 @@ public class UniteEnseignement {
 	private String code;
 	@Column(name = "libelle_fr", nullable = false, length = 150)
 	private String libelleFr;
+	@Column(name = "libelle_Ar", nullable = false, length = 150)
+	private String libelleAr;
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "id_nc_nature", nullable = false)

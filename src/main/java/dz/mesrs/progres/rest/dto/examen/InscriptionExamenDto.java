@@ -29,6 +29,7 @@ public class InscriptionExamenDto implements java.io.Serializable {
 	private Integer mcId;
 	private String mcCode;
 	private String mcLibelleFr;
+	private String mcLibelleAr;
 	private Double rattachementMcCoefficient;
 	private Double rattachementMcCredit;
 	private Double mcCreditObtenu;
@@ -90,7 +91,6 @@ public class InscriptionExamenDto implements java.io.Serializable {
 	private Double noteMax;
 	private Double noteControleContinu;
 	private Double noteControleIntermediaire;
-	
 	private Date dateExamen;
 	private Date heureDebut;
 	private Date heureFin;

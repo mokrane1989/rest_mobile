@@ -39,15 +39,13 @@
             <b>examenSession.rattachementMc.uniteEnseignement.ncNatureUe.libelleLongFr
             </b>
         </field>
-
-
-
-
-
-
         <field>
             <a>mcLibelleFr</a>
             <b>examenSession.rattachementMc.matiereConstitutive.libelleFr
+            </b>
+        </field> <field>
+            <a>mcLibelleAr</a>
+            <b>examenSession.rattachementMc.matiereConstitutive.libelleAr
             </b>
         </field>
 

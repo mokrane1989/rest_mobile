@@ -41,6 +41,10 @@
 			<a>niveauLibelleLongLt</a>
 			<b>periode.niveau.libelleLongLt</b>
 		</field>
+	<field>
+			<a>niveauLibelleLongAr</a>
+			<b>periode.niveau.libelleLongAr</b>
+		</field>
 
 		<field>
 			<a>niveauRang</a>
@@ -59,6 +63,10 @@
 	<field>
 		<a>typeDecisionLibelleFr</a>
 		<b>typeDecision.libelleLongFr</b>
+	</field>
+	<field>
+		<a>typeDecisionLibelleAr</a>
+		<b>typeDecision.libelleLongAr</b>
 	</field>
 
 
@@ -91,6 +99,10 @@
 		<field>
 			<a>ueLibelleFr</a>
 			<b>repartitionUe.uniteEnseignement.libelleFr</b>
+		</field>
+		<field>
+			<a>ueLibelleAr</a>
+			<b>repartitionUe.uniteEnseignement.libelleAr</b>
 		</field>
 		<field>
 			<a>ueCode</a>
@@ -152,6 +164,9 @@
 		<field>
 			<a>mcLibelleFr</a>
 			<b>rattachementMc.matiereConstitutive.libelleFr</b>
+		</field><field>
+			<a>mcLibelleAr</a>
+			<b>rattachementMc.matiereConstitutive.libelleAr</b>
 		</field>
 
 

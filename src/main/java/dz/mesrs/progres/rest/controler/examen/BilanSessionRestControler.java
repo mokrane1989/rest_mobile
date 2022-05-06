@@ -98,8 +98,8 @@ public class BilanSessionRestControler {
         if (bilans != null && !bilans.isEmpty()) {
             List<BilanSessionDto> list = new ArrayList<>();
             for (BilanSession bilan : bilans) {
-                BilanSessionDto dto = mapper.map(bilan, BilanSessionDto.class);
-                list.add(dto);
+                list.add(mapper.map(bilan, BilanSessionDto.class));
+
             }
             return list;
         }

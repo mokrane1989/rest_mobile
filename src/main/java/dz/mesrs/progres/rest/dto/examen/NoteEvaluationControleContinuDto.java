@@ -40,12 +40,14 @@ public class NoteEvaluationControleContinuDto implements Serializable {
 	private Integer oofId;
 	private Integer periodeId;
 	private String llPeriode;
+	private String llPeriodeAr;
 	private Integer associationGroupePedagogiqueId;
 	
 	private Integer apId;
 	private String apCode;
 	private Integer rattachementMcId;
 	private String rattachementMcMcLibelleFr;
+	private String rattachementMcMcLibelleAr;
 	private String rattachementMcUeLibelleFr;
 	private Boolean comptablise;
 	private String ncTypeAppreciationLlFr;

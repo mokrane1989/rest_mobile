@@ -27,10 +27,18 @@
 			<a>periodeLibelleFr</a>
 			<b>periode.libelleLongLt</b>
 		</field>
+	<field>
+			<a>periodeLibelleAr</a>
+			<b>periode.libelleLongAr</b>
+		</field>
 		<field>
 			<a>niveauLibelleFr</a>
 			<b>periode.niveau.libelleLongLt</b>
 		</field>
+	<field>
+		<a>niveauLibelleAr</a>
+		<b>periode.niveau.libelleLongAr</b>
+	</field>
 
 		<field>
 			<a>rattachementMcId</a>
@@ -41,7 +49,10 @@
 			<a>mcLibelleFr</a>
 			<b>rattachementMc.matiereConstitutive.libelleFr</b>
 		</field>
-
+	<field>
+		<a>mcLibelleAr</a>
+		<b>rattachementMc.matiereConstitutive.libelleAr</b>
+	</field>
 
 		<field>
 			<a>mcCredit</a>

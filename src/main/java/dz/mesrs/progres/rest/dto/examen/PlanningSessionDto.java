@@ -15,6 +15,7 @@ public class PlanningSessionDto implements java.io.Serializable {
 	private Integer idPeriode;
 	private String codePeriode;
 	private String libellePeriode;
+	private String libellePeriodeAr;
 
 	private Integer anneeAcademiqueId;
 	private String anneeAcademiqueCode;
@@ -31,6 +32,7 @@ public class PlanningSessionDto implements java.io.Serializable {
 	private Integer niveauId;
 	private String niveauCode;
 	private String niveauLibelleLongLt;
+	private String niveauLibelleLongAr;
 
 	private Integer situationId;
 	private String situationCode;
@@ -38,12 +40,14 @@ public class PlanningSessionDto implements java.io.Serializable {
 	private String situationLibelleAr;
 
 	private String intitule;
+	private String intituleAr;
 	private Date dateDebut;
 	private Date dateFin;
 	private Integer numeroSession;
 	private Integer ncTypeSessionId;
 	private String ncTypeSessionCode;
 	private String ncTypeSessionLibelleFr;
+	private String ncTypeSessionLibelleAr;
 
 	private Date dateCreation;
 	private Date datePublication;

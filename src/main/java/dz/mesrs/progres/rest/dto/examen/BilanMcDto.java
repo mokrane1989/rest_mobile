@@ -19,8 +19,10 @@ public class BilanMcDto implements Serializable {
     private Long bilanSessionId;
     private Integer rattachementMcId;
     private String mcLibelleFr;
+    private String mcLibelleAr;
     private String mcCode;
     private String ueLibelleFr;
+    private String ueLibelleAr;
     private String ueCode;
     private Double moyenneControleContinu;
     private Double noteControleIntermediaire;

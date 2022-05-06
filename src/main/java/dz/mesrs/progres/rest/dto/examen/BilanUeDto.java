@@ -16,7 +16,8 @@ public class BilanUeDto implements Serializable {
 	
 	private Integer repartitionUeId;
 	private String ueLibelleFr;
-	
+	private String ueLibelleAr;
+
 	private String ueCode;
 	private String ueType;
 	private Double moyenne;

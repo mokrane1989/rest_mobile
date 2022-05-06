@@ -69,8 +69,7 @@ public class BacRestControler {
         if (notes != null && !notes.isEmpty()) {
             List<NoteMatiereBacDto> list = new ArrayList<>();
             for (NoteMatiereBac note : notes) {
-                NoteMatiereBacDto dto = mapper.map(note, NoteMatiereBacDto.class);
-                list.add(dto);
+                list.add(mapper.map(note, NoteMatiereBacDto.class));
             }
             return list;
         }
@@ -162,28 +161,7 @@ public class BacRestControler {
                     .body(encodingFile);
 
     }
- //   @GetMapping(value = "/image/{anneeBac}/{matricule}", produces = {MediaType.IMAGE_JPEG_VALUE, MediaType.IMAGE_PNG_VALUE})
-//    public ResponseEntity<String> image(@PathVariable("matricule") String matricule, @PathVariable("anneeBac") String anneeBac) throws IOException {
-//        Optional<DossierEtudiant> de = dossierEtudiantRepository.findFirstByDossierBachelier_AnneeBacAndDossierBachelier_Matricule(anneeBac, matricule);
-//          // String uploadFile = photoPath+de.get().getIndividu().getPhoto();
-//        String uploadFile = "C:\\Users\\USER\\Pictures\\r.jpg";
-//        String x = "C:\\Users\\USER\\Pictures\\r1.jpg";
-//        ByteArrayOutputStream f = new ByteArrayOutputStream();
-//        Thumbnails.of(uploadFile)
-//                .size(120, 120)
-//                .outputQuality(1)
-//                .toFile(x);
-//
-//        byte[] file = Files.readAllBytes(Paths.get(x));
-//
-//        String encodingFile = Base64.getEncoder().encodeToString(file);
-//        System.out.println(encodingFile);
-//            return ResponseEntity
-//                    .status(HttpStatus.OK)
-//                    .body(encodingFile);
-//
-//
-//    }
+
 
     public  void resizeImage(String originalFilePath, String targetFilePath, int targetSize) {
         try {

@@ -13,6 +13,9 @@
 	<field>
 		<a>rattachementMcMcLibelleFr</a>
 		<b>evaluationControleContinu.associationGroupePedagogique.rattachementMc.matiereConstitutive.libelleFr</b>
+	</field><field>
+		<a>rattachementMcMcLibelleAr</a>
+		<b>evaluationControleContinu.associationGroupePedagogique.rattachementMc.matiereConstitutive.libelleAr</b>
 	</field>
 <field>
 	<a>apCode</a>
@@ -22,6 +25,10 @@
 	<field>
 		<a>llPeriode</a>
 		<b >evaluationControleContinu.periode.libelleLongLt</b>
+	</field>
+	<field>
+		<a>llPeriodeAr</a>
+		<b >evaluationControleContinu.periode.libelleLongAr</b>
 	</field>
 	</mapping>
 

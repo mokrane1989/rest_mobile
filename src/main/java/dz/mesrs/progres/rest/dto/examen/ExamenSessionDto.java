@@ -24,6 +24,7 @@ public class ExamenSessionDto implements java.io.Serializable {
 	private Integer mcId;
 	private String mcCode;
 	private String mcLibelleFr;
+	private String mcLibelleAr;
 	private Integer mcCoefficient;
 	private Integer mcCredit;
 
@@ -34,6 +35,7 @@ public class ExamenSessionDto implements java.io.Serializable {
 
 	private String numeroSession;
 	private String typeSession;
+	private String typeSessionAr;
 	private Integer cycleId;
 	private String cycleCode;
 	private String cycleLibelleLongLt;
@@ -44,6 +46,7 @@ public class ExamenSessionDto implements java.io.Serializable {
 	private Integer idPeriode;
 	private String codePeriode;
 	private String libellePeriode;
+	private String libellePeriodeAr;
 
 	private Integer anneeAcademiqueId;
 	private String anneeAcademiqueCode;

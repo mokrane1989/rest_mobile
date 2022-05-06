@@ -15,12 +15,16 @@ public class CoefficientExamenDto implements Serializable {
 	private String ofLibelleFr;
 	private Integer periodeId;
 	private String periodeLibelleFr;
+	private String periodeLibelleAr;
 	private String niveauLibelleFr;
+	private String niveauLibelleAr;
 	private Integer rattachementMcId;
 	private String mcLibelleFr;
+	private String mcLibelleAr;
 	private double mcCredit;
 	private double mcCoefficient;
 	private String ueLibelleFr;
+	private String ueLibelleAr;
 	private double coefficientExamen;
 	private double coefficientControleContinu;
 	private double coefficientControleIntermediaire;
