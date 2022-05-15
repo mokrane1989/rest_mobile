@@ -39,4 +39,6 @@ public class DossierInscriptionAdministrative   implements java.io.Serializable 
 	private RefEtablissement refEtablissement;
 
 
+
+
 }

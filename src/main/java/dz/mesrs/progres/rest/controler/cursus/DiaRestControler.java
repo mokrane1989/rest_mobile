@@ -1,10 +1,13 @@
 package dz.mesrs.progres.rest.controler.cursus;
 
 import com.github.dozermapper.core.Mapper;
+import dz.mesrs.progres.rest.dto.conge.CongeAcademiqueDto;
 import dz.mesrs.progres.rest.dto.cursus.DossierInscriptionAdministrativeDto;
+import dz.mesrs.progres.rest.modal.conge.CongeAcademique;
 import dz.mesrs.progres.rest.modal.cursus.DossierEtudiant;
 import dz.mesrs.progres.rest.modal.cursus.DossierInscriptionAdministrative;
 import dz.mesrs.progres.rest.modal.ppm.RefIndividu;
+import dz.mesrs.progres.rest.repository.CongeAcademiqueRepository;
 import dz.mesrs.progres.rest.repository.DossierEtudiantRepository;
 import dz.mesrs.progres.rest.repository.DossierInscriptionAdministrativeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,21 +34,11 @@ public class DiaRestControler {
     DossierInscriptionAdministrativeRepository diaRepository;
 
     @Autowired
+    CongeAcademiqueRepository congeAcademiqueRepository;
+
+    @Autowired
     DossierEtudiantRepository dossierEtudiantRepository;
 
-
-
-    @GetMapping("/sss/{idDia}")
-    public @ResponseBody
-    DossierInscriptionAdministrativeDto getDiaAnneeEncourddds(@PathVariable Long idDia) {
-        Optional<DossierInscriptionAdministrative> dia = diaRepository.findById(idDia);
-        if(dia.isPresent()) {
-            DossierInscriptionAdministrativeDto dto = mapper.map(dia.get(), DossierInscriptionAdministrativeDto.class);
-            return dto;
-        }
-        return null;
-
-    }
 
 
     // http://192.168.40.66:8081/api/infos/bac/2016/37049153/dias
@@ -68,6 +61,21 @@ public class DiaRestControler {
 
     }
 
+    @GetMapping("/bac/{anneeBac}/{matriculeBac}/anneeAcademique/{idAnneeAcademiqe}/congeacademique")
+    public @ResponseBody
+    CongeAcademiqueDto getCongeAcademique(@PathVariable String anneeBac, @PathVariable String matriculeBac , @PathVariable Integer idAnneeAcademiqe) {
+        Optional<DossierInscriptionAdministrative> dia = diaRepository.findFirstByDossierEtudiant_DossierBachelier_AnneeBacAndDossierEtudiant_DossierBachelier_MatriculeAndAnneeAcademique_id(anneeBac, matriculeBac, idAnneeAcademiqe);
+        if(dia.isPresent()){
+            DossierInscriptionAdministrative dossierInscriptionAdministrative = dia.get();
+            System.out.println("-----------------------------------------------"+dossierInscriptionAdministrative.getId());
+            CongeAcademique congeAcademique = congeAcademiqueRepository.findByDossierInscriptionAdministrative_Id(1141290);
+            System.out.println("-----------------------------------------------"+congeAcademique);
+
+            if(congeAcademique != null)
+            return mapper.map(congeAcademique.getId(),CongeAcademiqueDto.class);
+        }
+        return null;
+    }
 
 
 

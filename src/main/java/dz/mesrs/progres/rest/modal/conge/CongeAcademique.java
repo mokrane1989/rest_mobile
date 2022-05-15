@@ -1,34 +1,22 @@
 package dz.mesrs.progres.rest.modal.conge;
-
-// Generated 8 juin 2014 14:16:38 by Hibernate Tools 3.6.0
-
 import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import dz.mesrs.progres.rest.modal.Nomenclature;
 import dz.mesrs.progres.rest.modal.cursus.DossierInscriptionAdministrative;
 import dz.mesrs.progres.rest.modal.lmd.AnneeAcademique;
 import lombok.Data;
-import lombok.Getter;
 
 @Data
 @Entity
-@Table(name = "conge_academique", schema = "cursus"
-// uniqueConstraints=@UniqueConstraint(columnNames={"id_annee_academique",
-// "id_dossier_inscription"})
-)
+@Table(name = "conge_academique", schema = "cursus")
 public class CongeAcademique implements java.io.Serializable {
 
 	private static final long serialVersionUID = 1L;

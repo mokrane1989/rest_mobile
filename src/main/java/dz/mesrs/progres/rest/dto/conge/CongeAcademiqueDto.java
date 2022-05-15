@@ -11,7 +11,6 @@ public class CongeAcademiqueDto implements java.io.Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private Long id;
-
 	private Integer ouvertureOffreFormationId;
 	private String libelleOffreFormationFr;
 	private String libelleOffreFormationAr;
